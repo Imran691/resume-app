@@ -1,6 +1,5 @@
 
 import Education from 'components/Education'
-import Footer from 'components/Footer'
 import Main from 'components/Main'
 import Mentors from 'components/Mentors'
 import Skills from 'components/Skills'
@@ -13,7 +12,6 @@ export default function Home() {
     <Education/>
     <Mentors/>
     {/* <Skills/> */}
-    <Footer/>
     </>
   )
 }
