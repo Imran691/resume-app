@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Mentors() {
   return (
-    <div className="flex flex-col md:flex-row py-10 bg-white px-12 font-serif">
+    <div className="flex flex-col md:flex-row py-10 bg-white px-2 md:px-12 font-serif">
       
       <div className="w-full md:w-2/5 px-2 md:px-20 text-2xl  text-stone-900 font-bold py-10">
         __Mentors
       </div>
 
-      <div className="w-full md:w-3/5 px-2 md:px-20 flex-grow ml-2 md:ml-6">
+      <div className="w-full md:w-3/5 px-2 md:px-20 flex-grow">
         <div>
           {mentors.map((ment) => (
             <div
@@ -27,7 +27,7 @@ export default function Mentors() {
                 />
               </div>
 
-              <div className="flex-col py-6 flex flex-[2] text-left pl-10 text-lg">
+              <div className="flex-col py-6 flex flex-[2] text-left px-4 md:px-8 text-lg">
                 <h1 className="pt-2 text-xl md:text-2xl font-bold">{ment.title}</h1>
                 <p className="pt-2 text-lg">{ment.intro}</p>
               </div>
