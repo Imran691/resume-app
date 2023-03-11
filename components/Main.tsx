@@ -24,7 +24,7 @@ export default function Main() {
             </div>
 
             <div>
-            <button className='mt-16 p-2 md:p4 rounded-lg bg-stone-700 text-lg text-white '>Get in touch</button>
+            <button className='mt-16 p-2 md:p4 rounded-lg bg-stone-700 hover:bg-stone-500 text-lg text-white '>Get in touch</button>
             </div>
         </div>
     </div>

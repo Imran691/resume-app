@@ -1,4 +1,5 @@
 import React from "react";
+import { education } from "data/education-data";
 
 export default function Education() {
   return (
@@ -8,19 +9,17 @@ export default function Education() {
 
       <div className="w-full md:w-3/5 px-2 md:px-20 flex-grow">
 
-        <div className= "items-center shadow-2xl mb-8 rounded-xl px-4 md:px-8">
-          <h1 className="py-10 text:xl md:text-2xl font-bold pb-4">Bahauddin Zakaria University, Multan</h1>
-          <p className="text-lg pb-8">Bachelor of Science in Electrical Engineering</p>
+      <div>
+          {education.map((edu) => (
+            <div key={edu.id}>
+
+              <div className="items-center shadow-2xl mb-8 rounded-xl px-4 md:px-8">
+                <h1 className="py-10 text:xl md:text-2xl font-bold pb-4">{edu.institute}</h1>
+                <p className="text-lg pb-8">{edu.degree}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className= "items-center shadow-2xl mb-8 rounded-xl px-4 md:px-8">
-          <h1 className="py-10 text-xl md:text-2xl font-bold pb-4">University of Management and Technology, Lahore</h1>
-          <p className="text-lg pb-8">Master of Science in Electrical Engineering</p>
-        </div>
-        <div className= "items-center shadow-2xl mb-8 rounded-xl px-4 md:px-8">
-          <h1 className="py-10 text-xl md:text-2xl font-bold pb-4">Presidential Initiative for Artificial Intelligence and Computing</h1>
-          <p className="text-lg pb-8">Web-3 and Metaverse Development (One year programme)</p>
-        </div>
-    
       </div>
     </div>
   );
