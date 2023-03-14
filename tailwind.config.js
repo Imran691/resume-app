@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      name:["'Crete Round', serif"]
+    }
   },
   plugins: [],
 }

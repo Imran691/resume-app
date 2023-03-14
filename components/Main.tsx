@@ -8,12 +8,12 @@ export default function Main() {
   return (
     <div className='flex flex-col sm:flex-row justify-center py:2 sm:py-10 bg-white px-2 sm:px-12 font-serif'>
       
-        <div className='w-full sm:w-2/5'>
+        <div className='w-full h-screen sm:w-2/5'>
         <Image src={MyImage} alt="my-image" className='rounded-xl'/>
         </div>
 
         
-        <div className='w-full sm:w-3/5 px-2 md:px-8 py-2 md:py-8'>
+        <div className='w-full h-screen sm:w-3/5 px-2 md:px-8 py-2 md:py-8'>
           <div className='shadow-xl rounded-xl px-4 md:px-8 md:p-8'>
             <p className='font-bold text-2xl leading-relaxed pt-10 text-stone-600'>{name} </p>
             <p className='font-bold text-2xl leading-relaxed  text-stone-600'>{message}</p>

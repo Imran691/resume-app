@@ -4,23 +4,20 @@ import Menu from "../public/icons/menu.png";
 
 export default function Header() {
   return (
-    <div className="flex bg-slate-100 text-lg py-4 sm:py-8 px-4 sm:px-16 text-stone-700 font-serif font-bold">
-      <div className="flex flex-grow hover:underline text-lg md:text-2xl">
-        Muhammad Imran
-      </div>
+    <section className="bg-neutral-700 text-white font-name text-sm md:text-base lg:text-lg">
+      <div className="flex py-1 sm:py-3 lg:py-5 xl:py-7 px-2 sm:px-6 lg:px-8 xl:px-12 font-bold justify-between">
+        <h1>Muhammad Imran</h1>
 
-      <div className="hidden sm:flex justify-end">
-        <ul className="flex px-16 flex-wrap">
-          <li className=" px-4 hover:underline ">Work</li>
-          <li className=" px-4 hover:underline ">About me</li>
+        <ul className="flex-wrap hidden sm:flex">
+          <li className=" px-4 hover:underline">Work</li>
+          <li className=" px-4 hover:underline ">About</li>
           <li className=" px-4 hover:underline ">Contact</li>
         </ul>
 
-
-      </div>
-      <div className="sm:hidden flex  rounded-full justify-end flex-1 pr-2">
+        <div className="sm:hidden flex rounded-full justify-end flex-1 mr-2">
           <Image src={Menu} alt="menu-icon" height={60} width={60} />
         </div>
-    </div>
+      </div>
+    </section>
   );
 }
