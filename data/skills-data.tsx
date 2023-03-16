@@ -14,13 +14,13 @@ export const skillSet =[
     {
         id:1,
         src:"/logos/js.png",
-        title:"JavaScript",
+        title:"JS",
         intro:"Interactivity for user"
     },
     {
         id:1,
         src:"/logos/ts.png",
-        title:"TypeScript",
+        title:"TS",
         intro:"Super set of JS to ensure type safety"
     },
     {
@@ -38,7 +38,7 @@ export const skillSet =[
     {
         id:1,
         src:"/logos/tailwindcss.png",
-        title:"TailWind CSS",
+        title:"TW CSS",
         intro:"CSS frame work for styling and responsiveness"
     }
 ]

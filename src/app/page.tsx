@@ -1,17 +1,21 @@
 
 import Education from 'components/Education'
-import Main from 'components/Main'
+import About from 'components/About'
 import Mentors from 'components/Mentors'
 import Skills from 'components/Skills'
+
 import React from 'react'
+import HomeSec from 'components/HomeSec'
 
 export default function Home() {
   return (
     <div>
-    <Main/>
+    <HomeSec/>
+    <About/>
+    <Skills/>
     <Education/>
+    
     <Mentors/>
-    {/* <Skills/> */}
     </div>
   )
 }
