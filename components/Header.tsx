@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Menu from "../public/icons/menu.png";
 
@@ -11,11 +10,11 @@ export default function Header() {
 
         <div className="flex items-center gap-3 md:gap-12">
         <ul id="menu" className="nav-menus translate-y-[-200%] md:translate-y-0">
-          <a className="nav-link" href="#Home">Home</a>
-          <a className="nav-link" href="#About">About</a>
-          <a className="nav-link" href="#Skills">Skills</a>
-          <a className="nav-link" href="#Portfolio">Portfolio</a>
-          <a className="nav-link" href="#Contact">Contact</a>
+          <a className="nav-link" href="#homeSec">Home</a>
+          <a className="nav-link" href="#about">About</a>
+          <a className="nav-link" href="#skills">Skills</a>
+          <a className="nav-link" href="#portfolio">Portfolio</a>
+          <a className="nav-link" href="#conatact">Contact</a>
         </ul>
       </div>
 

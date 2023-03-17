@@ -52,7 +52,7 @@
         @apply
         grid items-center
         grid-cols-1 md:grid-cols-2
-        pt-28 md:pt-32
+        pt-12 md:pt-20
         md:h-screen
         md:overflow-hidden
 
@@ -82,6 +82,47 @@
         flex items-center justify-center
         bg-primary-white dark:bg-primary-gray
         w-28 h-28 rounded-full cursor-pointer
+    }
+
+    .skill::before {
+        content: attr(data-text);
+        @apply
+        absolute top-full
+        opacity-100 md:opacity-0
+        w-max px-3 py-2 mt-3
+        bg-white dark:bg-primary-gray
+        rounded md:shadow-md transition
+        }
+
+    .skill:hover::before {
+        @apply opacity-100
+    }
+
+    .portfolio-heading {
+        @apply
+        text-4xl md:text-5xl
+        text-center
+        text-primary-default md:text-left
+        font-bold
+        mb-8 md:mb-12
+    }
+
+    .portfolio-card {
+        @apply
+        flex flex-col md:flex-row
+        items-center
+        bg-white dark:bg-primary-gray
+        rounded overflow-hidden
+    }
+
+    .portfolio-link {
+        @apply
+        flex items-center gap-2
+        px-4 py-2 hover:brightness-110
+    }
+
+    .contact-link {
+        @apply p-4 rounded-full hover:brightness-110
     }
 }
 

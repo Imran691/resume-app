@@ -1,11 +1,10 @@
-
-import Education from 'components/Education'
-import About from 'components/About'
-import Mentors from 'components/Mentors'
-import Skills from 'components/Skills'
-
 import React from 'react'
+
 import HomeSec from 'components/HomeSec'
+import About from 'components/About'
+import Skills from 'components/Skills'
+import Dots from 'components/dots'
+import Portfolio from 'components/Portfolio'
 
 export default function Home() {
   return (
@@ -13,9 +12,8 @@ export default function Home() {
     <HomeSec/>
     <About/>
     <Skills/>
-    <Education/>
-    
-    <Mentors/>
+    <Dots/>
+    <Portfolio/>
     </div>
   )
 }

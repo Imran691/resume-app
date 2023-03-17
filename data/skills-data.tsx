@@ -3,42 +3,42 @@ export const skillSet =[
         id:1,
         src:"/logos/html5.png",
         title:"HTML",
-        intro:"Basic structure of any web application"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/css.png",
         title:"CSS",
-        intro:"Styling of web application"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/js.png",
         title:"JS",
-        intro:"Interactivity for user"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/ts.png",
         title:"TS",
-        intro:"Super set of JS to ensure type safety"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/nodejs.png",
         title:"Node.js",
-        intro:"Run time environment of JS"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/nextjs.png",
         title:"Next.js",
-        intro:"Frame work bult on React.js"
+        experience:"Experience 2 years",
     },
     {
         id:1,
         src:"/logos/tailwindcss.png",
         title:"TW CSS",
-        intro:"CSS frame work for styling and responsiveness"
+        experience:"Experience 2 years",
     }
 ]
