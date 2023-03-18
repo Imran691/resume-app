@@ -33,5 +33,7 @@ module.exports = {
       nunito:["'Nunito Sans', sans-serif;"]
     }
   },
+  darkMode:"class",
+  mode: "jit",
   plugins: [],
 }

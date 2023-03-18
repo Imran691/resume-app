@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="pt-32 px-28">
+    <section id="portfolio" className="pt-32">
       <h2 className="portfolio-heading">My portfolio</h2>
       {portfolio.map((pf) => (
         <li key={pf.id} className="flex flex-col md:flex-row mb-8">

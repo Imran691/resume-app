@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 @layer base {
-    body {
+    .body {
         font-family: nunito;
         @apply
         bg-primary-white dark:bg-primary-black

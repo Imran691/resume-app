@@ -14,7 +14,7 @@ export default function Skills() {
         <div className='flex flex-wrap items-center justify-center gap-24 md:gap-12 mb-14'>
         {skillSet.map( (skill) => (
           <div key={skill.id} className="skill" data-text={skill.experience}>
-            <Image src={skill.src} alt={skill.title} width={60} height={60}/>
+            <Image src={skill.src} alt={skill.title} width={50} height={50}/>
             </div>
             ))}
             </div>
