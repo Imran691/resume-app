@@ -1,5 +1,4 @@
 import { portfolio } from "data/portfolio-data";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,15 +6,15 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="pt-32">
       <h2 className="portfolio-heading">My portfolio</h2>
+
+      <ul className="w-full md:w-5/6 space-y-10 py-5">
       {portfolio.map((pf) => (
-        <li key={pf.id} className="flex flex-col md:flex-row mb-8">
-          <div className=" portfolio-card w-full md:w-1/3 h-60">
-            <Image
+        <li key={pf.id} className="portfolio-card">
+          <div className="w-full md:w-1/3 h-60">
+            <img
               className="h-full w-full object-cover"
               src={pf.card}
               alt={pf.title}
-              width={120}
-              height={120}
             />
           </div>
           <div className="w-full md:w-2/3 p-5">
@@ -42,6 +41,7 @@ export default function Portfolio() {
           </div>
         </li>
       ))}
+      </ul>
     </section>
   );
 }

@@ -1,27 +1,34 @@
-
-import Image from "next/image";
-import React from "react";
+// "use client"
+import React, { useState } from "react";
+// import { FiMenu } from "react-icons/fi";
 import DarkModBtn from "./DarkModeBtn";
-import Title from "./Title";
 
 export default function Header() {
+  // const [open, setOpen] = useState(false);
+
   return (
     <section className="nav">
-        <div className="container flex items-center justify-between h-16 md:h-20">
-        <Title/>
-        <div className="flex items-center gap-3 md:gap-12">
+        <div className="container flex items-center justify-between h-16 md:h-20 max-w-full">
+      <h1 className="relative z-30 font-semibold text-2xl">Muhammad Imran</h1>
+    
+
+        <div className="flex flex-row-reverse md:flex-row items-center gap-3 md:gap-12">
+        
         <ul id="menu" className="nav-menus translate-y-[-200%] md:translate-y-0">
-            <DarkModBtn/>
           <a className="nav-link" href="#homeSec">Home</a>
           <a className="nav-link" href="#about">About</a>
           <a className="nav-link" href="#skills">Skills</a>
           <a className="nav-link" href="#portfolio">Portfolio</a>
           <a className="nav-link" href="#conatact">Contact</a>
+            <DarkModBtn/>
         </ul>
+        
+        {/* <nav className={`${open? "block" : "hidden"} w-full lg:flex lg:items-center lg:w-auto`}>
+        <FiMenu className="relative z-30 p-2 md:hidden dark:invert" onClick={ () => setOpen(!open)}/>
+
+        </nav> */}
+
       </div>
-        {/* <div className="sm:hidden flex rounded-full justify-end flex-1 mr-2">
-          <Image src={Menu} alt="menu-icon" height={60} width={60} />
-        </div> */}
       </div>
     </section>
   );
